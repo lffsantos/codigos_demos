@@ -7,6 +7,9 @@
 	233168
 
 """
+import time
+import math
+
 class P1:
 
 	def __init__(self, number):
@@ -27,3 +30,21 @@ class P2:
             penult, last_value = last_value, last_value + penult
             
         return soma
+
+class P3:
+
+	def primos_factor(self, number):
+		lista = []
+		largest_value = 2
+		i = 2
+		while True:
+			if number%i == 0 and i not in lista:
+				largest_value = i
+				number /= i
+			if number == 1:
+				break
+			i += 1
+		return largest_value
+
+
+

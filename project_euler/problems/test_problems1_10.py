@@ -4,7 +4,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 import unittest
-from problems1_10 import P1, P2
+from problems1_10 import P1, P2, P3
 
 class TestEuller(unittest.TestCase):
 
@@ -18,6 +18,11 @@ class TestEuller(unittest.TestCase):
 		pro2 = P2()
 		sum_values = pro2.sum_values_fibonacci(4000000)
 		self.assertEqual(4613732,sum_values)
+
+	def test_primos_factor(self):
+		pro3 = P3()
+		largest_prime_factor = pro3.primos_factor(13195)
+		self.assertEqual(29,largest_prime_factor)
 
 if __name__ == '__main__':
     unittest.main()
