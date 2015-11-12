@@ -21,7 +21,7 @@ class TestEuller(unittest.TestCase):
 
 	def test_primos_factor(self):
 		pro3 = P3()
-		largest_prime_factor = pro3.primos_factor(13195)
+		largest_prime_factor = pro3.largest_value_primos_factor(13195)
 		self.assertEqual(29,largest_prime_factor)
 
 if __name__ == '__main__':

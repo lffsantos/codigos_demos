@@ -33,7 +33,7 @@ class P2:
 
 class P3:
 
-	def primos_factor(self, number):
+	def largest_value_primos_factor(self, number):
 		lista = []
 		largest_value = 2
 		i = 2
