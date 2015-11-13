@@ -4,7 +4,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 import unittest
-from problems1_10 import P1, P2, P3, P4, P5
+from problems1_10 import P1, P2, P3, P4, P5, P6
 
 class TestEuller(unittest.TestCase):
 
@@ -34,6 +34,11 @@ class TestEuller(unittest.TestCase):
 		pro5 = P5()
 		smallest_multiple = pro5.smallest_multiple(10)
 		self.assertEqual(2520,smallest_multiple)
+
+	def test_sum_square_difference(self):
+		pro6 = P6()
+		sum_square_difference = pro6.sum_square_difference(100)
+		self.assertEqual(25164150,sum_square_difference)		
 
 
 if __name__ == '__main__':
