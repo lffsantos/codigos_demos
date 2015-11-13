@@ -68,4 +68,27 @@ class P4:
 			return False
 
 
+class P5:
+
+	# slow code
+	def smallest_multiple(self, divisible):
+		number = divisible
+		cont = 0
+		i = 1
+		while True:
+			if number%i == 0:
+				cont +=1
+				i +=1
+			else:
+				number += 2
+				i = 1
+				cont = 0
+			if i == divisible:
+				i = 1
+			if cont == divisible:
+				break
+		return number
+
+
+
 
