@@ -92,7 +92,7 @@ class P5:
 class P6:
 
 	def sum_square_difference(self, max_value):
-		soma_1, soma_2 = 0, 0
+		soma_1, soma_2 = 0, 0 
 		for i in xrange(max_value+1):
 			soma_1 += pow(i, 2)
 			soma_2 += i

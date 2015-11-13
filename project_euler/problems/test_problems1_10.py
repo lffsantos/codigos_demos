@@ -25,7 +25,7 @@ class TestEuller(unittest.TestCase):
 		self.assertEqual(6857,largest_prime_factor)
 
 	def test_largest_palindrome_product(self):
-		pro4 = P4()
+		pro4 = P4() 
 		largest_palindrome_product = pro4.largest_palindrome_product()
 		self.assertEqual(906609,largest_palindrome_product)
 
