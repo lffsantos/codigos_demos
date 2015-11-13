@@ -47,4 +47,25 @@ class P3:
 		return largest_value
 
 
+class P4:
+
+	def largest_palindrome_product(self):
+		last_n = 999
+		largest_palindrome  = 0
+		for i in xrange(999, 99,-1):
+			for j in xrange(last_n, 99,-1):
+				if self.check_palindrome(i * j) and largest_palindrome < i*j:
+					largest_palindrome = i*j
+			last_n -= 1
+
+		return largest_palindrome
+
+	def check_palindrome(self, number):
+		str_number = str(number)
+		if str_number == str_number[::-1]:
+			return True
+		else:
+			return False
+
+
 
