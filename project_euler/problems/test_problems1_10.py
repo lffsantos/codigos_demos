@@ -4,11 +4,10 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 import unittest
-from problems1_10 import P1, P2, P3, P4, P5, P6
+from problems1_10 import P1, P2, P3, P4, P5, P6, P7
 
 class TestEuller(unittest.TestCase):
 
-	# Teste Problem 1
 	def test_sum_multiples_3_5(self):
 		pro_1 = P1(1000)
 		sum_values = pro_1.sum_multiples_3_5()
@@ -39,6 +38,11 @@ class TestEuller(unittest.TestCase):
 		pro6 = P6()
 		sum_square_difference = pro6.sum_square_difference(100)
 		self.assertEqual(25164150,sum_square_difference)		
+
+	def test_value_n_prime(self):
+		pro7 = P7()
+		value_n_prime = pro7.value_n_prime(10001)
+		self.assertEqual(104743,value_n_prime)		
 
 
 if __name__ == '__main__':

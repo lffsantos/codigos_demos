@@ -7,8 +7,8 @@
 	233168
 
 """
-import time
-import math
+
+from libutils import check_primos_number
 
 class P1:
 
@@ -99,6 +99,21 @@ class P6:
 		soma_2 = pow(soma_2,2)
 		diff = soma_2 - soma_1
 		return diff 
+
+class P7:
+
+	def value_n_prime(self, position):
+		cont = 1
+		number = 1
+		while True:
+			if check_primos_number(number):
+				cont +=1
+				if cont == position:
+					break
+			number +=2
+
+			
+		return number
 
 
 
