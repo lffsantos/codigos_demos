@@ -4,7 +4,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 import unittest
-from problems1_10 import P1, P2, P3, P4, P5, P6, P7
+from problems1_10 import P1, P2, P3, P4, P5, P6, P7, P8
 
 class TestEuller(unittest.TestCase):
 
@@ -43,6 +43,11 @@ class TestEuller(unittest.TestCase):
 		pro7 = P7()
 		value_n_prime = pro7.value_n_prime(10001)
 		self.assertEqual(104743,value_n_prime)		
+
+	def test_largest_product_in_serie(self):
+		pro8 = P8()
+		largest_product_in_serie = pro8.largest_product_in_serie(13)
+		self.assertEqual(23514624000,largest_product_in_serie)			
 
 
 if __name__ == '__main__':
